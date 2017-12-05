@@ -5,4 +5,4 @@ tmp_time <- paste(paste(df$year, df$month, df$day, sep="-"),
 tmp_time <- as.POSIXct(tmp_time)
 df$timestamp <- tmp_time
 df <- df[,c(1,2,6:14)]
-plot(df$timestamp,df$pm2.5,type = "l")
+plot(df$timestamp,df$pm2.5,type = "l",main="Task-1",xlab="time",ylab="ug/m^3")
